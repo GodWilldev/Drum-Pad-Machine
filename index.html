@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <title>Drum Machine</title>
+</head>
+<body >
+    <header class="border shadow-lg p-3 mb-5  rounded ">
+        <h1 class="h1 text-center text-warning ">Drum Machine</h1>
+        <footer id="footer"><a class="link-light" href="https://codepen.io/godwilldev">by Godwilldev</a></footer>
+    </header>
+    <main id="drum-machine" class='container  border border-4 border-warning shadow-lg py-3 mb-5 ps-5'>
+      <div class="row">
+            <section id="display" class="col-12  col-sm-5">
+                <p id="pad-name" class="p-3"></p>
+            </section>
+            <section id="pad" class="col-12 col-sm-7 container ">
+                <div class="row  m-1">
+                    <button id="Q-pad" class="drum-pad col-3 me-2 ">Q
+                        <audio id="Q" src="./sound/kick.ogg" type="audio/ogg"></audio>
+                    </button>
+                    <button id="W-pad" class="drum-pad col-3 me-2  ">W
+                        <audio id="W" src="./sound/hihat_closed.ogg"></audio>
+                    </button>
+                    <button id="E-pad" class="drum-pad col-3  ">E
+                        <audio id="E" src="./sound/snare.ogg" type="audio/ogg"></audio>
+                    </button>
+                </div>
+                <div class="row m-1">
+                    <button id="A-pad" class="drum-pad col-3 me-2 ">A
+                        <audio id="A" src="./sound/sidestick.ogg" type="audio/ogg">
+                        </audio>
+                    </button>
+                    <button id="S-pad" class="drum-pad col-3 me-2">S
+                        <audio id="S" src="./sound/hihat_opened.ogg" type="audio/ogg">
+                        </audio>
+                    </button>
+                    <button id="D-pad" class="drum-pad col-3 ">D
+                        <audio id="D" src="./sound/clap.ogg" type="audio/ogg"></audio>
+                    </button>
+                </div>
+                <div class="row m-1">
+                    <button id="Z-pad" class="drum-pad col-3 me-2">Z
+                        <audio id="Z" src="./sound/tom_hi.ogg" type="audio/ogg"></audio>
+                    </button>
+                    <button id="X-pad" class="drum-pad col-3 me-2">X
+                        <audio id="X" src="./sound/tom_low.ogg" type="audio/ogg"></audio>
+                    </button>
+                    <button id="C-pad" class="drum-pad col-3 ">C
+                        <audio id="C" source src="./sound/crash.ogg" type="audio/ogg"></audio>
+                    </button>
+                </div>
+            </section> 
+        </div>
+    </main>
+    <footer id="footer"><a class="link-light" href="https://codepen.io/godwilldev/">by Godwilldev</a></footer>
+</body>
+</html>
